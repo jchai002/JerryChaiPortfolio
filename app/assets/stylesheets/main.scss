@@ -1,0 +1,129 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$jet : #222222;
+$steel: #e6e6e6;
+$footer-color: rgba( #666666, 0.3 );
+
+
+body{
+	background-color:$steel;
+}
+
+.banner {
+	position:absolute;
+	height:25em;
+	width:100%;
+	-webkit-filter: grayscale(70%);
+  -moz-filter: grayscale(70%);
+  -o-filter: grayscale(70%);
+  -ms-filter: grayscale(70%);
+  filter: grayscale(70%);
+}
+
+.banner-clear {
+	height:25em;
+}
+
+.mobile-banner-clear {
+  height:25em;
+}
+
+
+.content{
+  position:relative;
+}
+
+.content {
+	margin-left:4em;
+  margin-right:4em;
+}
+
+.picture {
+  width:100%;
+  height: auto;
+}
+footer {
+  background-color:$footer-color;
+}
+
+.copyright {
+  text-align: center;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: $jet;
+    background-image: -webkit-linear-gradient(left, #ccc, $jet, #ccc);
+    background-image:    -moz-linear-gradient(left, #ccc, $jet, #ccc);
+    background-image:     -ms-linear-gradient(left, #ccc, $jet, #ccc);
+    background-image:      -o-linear-gradient(left, #ccc, $jet, #ccc);
+}
+
+#logo-text {
+  position: relative;
+  top: 25%;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: "Quicksand";
+}
+
+
+.blinking-cursor {
+  font-weight: 500;
+  font-size: 40px;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
