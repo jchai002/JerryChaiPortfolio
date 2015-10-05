@@ -13,7 +13,7 @@ body{
 
 .banner {
 	position:absolute;
-	height:25em;
+	height:500px;
 	width:100%;
 	-webkit-filter: grayscale(70%);
   -moz-filter: grayscale(70%);
@@ -22,23 +22,17 @@ body{
   filter: grayscale(70%);
 }
 
-.banner-clear {
-	height:25em;
-}
-
-.mobile-banner-clear {
-  height:25em;
-}
-
-
-.content{
-  position:relative;
-}
+@media only screen and (min-width: 40.063em) { 
+    .content {
+      margin-left:4em;
+      margin-right:4em;
+    }
+} /* min-width 641px, medium screens */
 
 .content {
-	margin-left:4em;
-  margin-right:4em;
+  min-height: 500px;
 }
+
 
 .picture {
   width:100%;
@@ -64,7 +58,7 @@ hr {
 
 #logo-text {
   position: relative;
-  top: 25%;
+  top: 20%;
   z-index: 1;
   width: 100%;
   text-align: center;
@@ -126,4 +120,8 @@ hr {
   50% {
     color: white;
   }
+}
+
+.item {
+  background-color:$jet;
 }
