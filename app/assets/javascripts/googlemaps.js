@@ -1,6 +1,6 @@
 function initMap() {
   var geocoder = new google.maps.Geocoder();
-  var address = "210 Rivington Street, New York, NY 10002"
+  var address = "33001 Korbel St, Union City, CA 94587"
   var mapOptions = {
     zoom: 16,
     scrollwheel: false
