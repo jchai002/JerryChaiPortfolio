@@ -22,20 +22,25 @@ body{
   filter: grayscale(70%);
 }
 
-@media only screen and (min-width: 40.063em) { 
-    .content {
-      margin-left:4em;
-      margin-right:4em;
-    }
-} /* min-width 641px, medium screens */
-
 .content {
-  min-height: 500px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left:4em;
+  margin-right:4em;
+  min-height: 250px;
+
+  p{
+    font-size: 14pt;
+  }
 }
 
+
 .profile-pic {
-  width:100%;
-  height: auto;
+  width:250px;
+  height:250px;
+  border-radius:10px;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
 }
 
 .picture {
@@ -136,4 +141,13 @@ p {
 .project img{
   border: 1px solid white;
   margin: 1em;
+}
+
+.future {
+  background-size:cover;
+  background-image:image_url('metro.jpg');
+  font-size: 50pt;
+  color:white;
+  -webkit-filter: grayscale(40%);
+  filter: grayscale(40%);
 }
