@@ -99,7 +99,8 @@ $font-family-monospace: 'Nunito', serif;
 // $font-weight-bold: bold !default;
 
 $header-bar-color: rgba( #000000, 0 );
-$header-dropdown-color: rgba( #666666, 0.3 );
+$header-dropdown-color: #666666;
+$header-dropdown-hover-color: lighten( $header-dropdown-color, 10% );
 $header-links-color: #222222;
 $main-headers-font-color: #222222;
 $accent-blue-color: #3E6A81;
@@ -1386,7 +1387,7 @@ $tabs-navigation-font-family: $body-font-family;
  // $topbar-margin-bottom: 0;
  // Controlling the styles for the title in the top bar
  // $topbar-title-weight: $font-weight-normal;
- $topbar-title-font-size: rem-calc(26);
+ $topbar-title-font-size: rem-calc(24);
  $topbar-title-font-family: "Pacifico";
  // Set the link colors and styles for top-level nav
  $topbar-link-color: $smoke;
@@ -1405,7 +1406,7 @@ $tabs-navigation-font-family: $body-font-family;
 $topbar-dropdown-bg: $header-bar-color;
 // $topbar-dropdown-link-color: $white;
 $topbar-dropdown-link-bg: $header-dropdown-color;
-$topbar-dropdown-link-bg-hover: $header-dropdown-color;
+$topbar-dropdown-link-bg-hover: $header-dropdown-hover-color;
 // $topbar-dropdown-link-weight: $font-weight-normal;
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: $white;
